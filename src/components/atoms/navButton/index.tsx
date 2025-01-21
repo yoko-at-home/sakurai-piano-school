@@ -1,17 +1,18 @@
-import { FC, HTMLAttributeAnchorTarget, ReactNode } from "react";
-import { Link as Scroll } from "react-scroll";
+import type { FC, ReactNode } from "react";
+import * as React from "react";
 
 type Props = {
   children: ReactNode;
-  href: HTMLAttributeAnchorTarget;
+  href: string;
 };
 
-export const NavButton: FC<Props> = (props) => {
+export const NavButton: FC<Props> = (props: Props) => {
   return (
-    <div className="inline-block bg-primary text-white text=lg px-10 py-6 rounded font-bold hover:pointer-events-auto text-center">
-      <Scroll to={props.href} smooth duration={300}>
-        {props.children}
-      </Scroll>
-    </div>
+    <a
+      href={props.href}
+      className="inline-block bg-primary text-white text=lg px-10 py-6 rounded font-bold hover:pointer-events-auto text-center"
+    >
+      {props.children}
+    </a>
   );
 };
