@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { HeaderBlock } from "../components/layout/header";
-import { FC, ReactNode } from "react";
+import type { FC, ReactNode } from "react";
 import { Profile } from "../components/organisms/profile";
 import { LessonSection } from "../components/organisms/lesson";
 import { CourseDetail } from "../components/organisms/courseDetail/course";
