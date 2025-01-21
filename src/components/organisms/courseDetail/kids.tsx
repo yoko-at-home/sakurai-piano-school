@@ -10,13 +10,13 @@ export const Kids = () => {
           <thead>
             <tr>
               <th className="whitespace-nowrap w-1/6">クラス</th>
-              <th className="w-4/6  p-2">概要</th>
-              <th className="w-1/6"></th>
+              <th className="w-4/6 p-2">概要</th>
+              <th className="w-1/6" />
             </tr>
           </thead>
           <tbody className="group divide-y-2">
             <tr className="hover:bg-gray-100">
-              <td></td>
+              <td />
               <td className="p-2 w-4/6">
                 小物楽器で音楽に乗って体を動かしたり、絵の多いワークブックを使用し、
                 プラス独自のキッズ用スキルも用いて楽しく音符とリズムを学びます。
