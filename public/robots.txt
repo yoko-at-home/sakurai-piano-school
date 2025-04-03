@@ -2,4 +2,3 @@
 User-agent: *
 Disallow:
 Sitemap: https://www.sakuraipiano.com/sitemap.xml
-Sitemap: https://sakuraipiano.com/sitemap.xml

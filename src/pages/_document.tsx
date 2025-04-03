@@ -296,6 +296,7 @@ const MyDocument: NextPage = () => {
           href="/favicon/icon-32x32.png"
         />
         <link rel="manifest" href="/favicon/manifest.json" />
+        <link rel="canonical" href="https://www.sakuraipiano.com/" />
         <meta
           name="google-site-verification"
           content="lOZ0gGomD4MYc0axD9rJa-DOUM4psUWJhNWKn6-zLnk"
