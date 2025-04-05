@@ -5,11 +5,6 @@ const MyDocument: NextPage = () => {
     <Html lang="ja">
       <Head>
         <meta charSet="utf-8" />
-        {/* <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no"
-        /> */}
-        {/* <!-- Primary Meta Tags --> */}
         <meta
           name="title"
           content="音の世界へ - 座間市のピアノ教室 櫻井ピアノスクール"
