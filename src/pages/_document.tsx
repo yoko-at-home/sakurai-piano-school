@@ -1,4 +1,4 @@
-import { NextPage } from "next";
+import type { NextPage } from "next";
 import { Head, Html, Main, NextScript } from "next/document";
 const MyDocument: NextPage = () => {
   return (
@@ -60,7 +60,7 @@ const MyDocument: NextPage = () => {
         />
         <meta name="twitter:image:width" content="1200" />
         <meta name="twitter:image:height" content="630" />
-        <meta name="author" content="Yoko Iwasaki"></meta>
+        <meta name="author" content="Yoko Iwasaki" />
         <meta
           name="msapplication-square70x70logo"
           content="/favicon/site-tile-70x70.png"
@@ -295,7 +295,7 @@ const MyDocument: NextPage = () => {
           sizes="32x32"
           href="/favicon/icon-32x32.png"
         />
-        <link rel="manifest" href="/favicon/manifest.json"></link>
+        <link rel="manifest" href="/favicon/manifest.json" />
         <meta
           name="google-site-verification"
           content="lOZ0gGomD4MYc0axD9rJa-DOUM4psUWJhNWKn6-zLnk"
@@ -303,7 +303,7 @@ const MyDocument: NextPage = () => {
       </Head>
       <body className="antialiased text-black bg-white">
         <Main />
-        <div id="root"></div>
+        <div id="root" />
         <NextScript />
       </body>
     </Html>

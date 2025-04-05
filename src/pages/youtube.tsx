@@ -1,12 +1,10 @@
 import type { NextPage } from "next";
-import { useRouter } from "next/router";
 import { Layout } from "../components/layout";
 import { YouTubeTile } from "../components/molecules/youtube";
 import { Heading2 } from "../components/atoms";
 import Head from "next/head";
 
 const YouTubePage: NextPage = () => {
-  const router = useRouter();
   return (
     <Layout>
       <Head>
