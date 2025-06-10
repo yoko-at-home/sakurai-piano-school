@@ -5,22 +5,25 @@ import { siteMetadata } from "../../data/siteMetadata";
 export const Form = () => {
   const router = useRouter();
 
-  const handleRegisterUser = async (event: any) => {
+  const handleRegisterUser = async (
+    event: React.FormEvent<HTMLFormElement>
+  ) => {
     event.preventDefault();
+    const form = event.currentTarget;
     const res = await fetch("/api/send", {
       body: JSON.stringify({
         subject: "お問い合わせありがとうございます",
         to: siteMetadata.email,
-        text:
-          "以下の内容でお問い合わせを受け付けました。\n折り返しご連絡させていただきます。\n\n" +
-          "お名前: " +
-          event.target.fullname.value +
-          " 様\n" +
-          "\nメールアドレス: " +
-          event.target.email.value +
-          "\n\nお問い合わせ内容:\n" +
-          event.target.message.value,
-        email: event.target.email.value,
+        text: `以下の内容でお問い合わせを受け付けました。
+折り返しご連絡させていただきます。
+
+お名前: ${form.fullname.value} 様
+
+メールアドレス: ${form.email.value}
+
+お問い合わせ内容:
+${form.message.value}`,
+        email: form.email.value,
       }),
       headers: {
         "Content-Type": "application/json",
@@ -76,7 +79,7 @@ export const Form = () => {
             rows={3}
             placeholder=""
             required
-          ></textarea>
+          />
         </div>
         <div className="flex justify-center mt-10">
           <button
