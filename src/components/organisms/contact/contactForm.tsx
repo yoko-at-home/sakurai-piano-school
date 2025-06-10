@@ -2,7 +2,7 @@
 /* eslint-disable react/jsx-no-comment-textnodes */
 import { Heading2, Heading3, HowToContact } from "../../atoms";
 import { Form } from "./form";
-import { Map } from "./map";
+import { MapComponent } from "./map";
 
 export const ContactForm = () => {
   return (
@@ -11,7 +11,7 @@ export const ContactForm = () => {
       id="contact"
     >
       <Heading2 type="gray">お問い合わせ・アクセス</Heading2>
-      <Map />
+      <MapComponent />
       <div className="text-left mb-20">
         <div id="contact2" />
         <Heading3 type="gray">お問い合わせ</Heading3>
