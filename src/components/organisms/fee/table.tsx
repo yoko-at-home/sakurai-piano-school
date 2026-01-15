@@ -4,7 +4,7 @@ export const Table = () => {
       <table className="table-fixed text-left leading-loose tracking-widest divide-y-2">
         <thead className="mb-2">
           <tr className="">
-            <th className="whitespace-nowrap pr-10"></th>
+            <th className="whitespace-nowrap pr-10">&nbsp;</th>
             <th className="p-2">
               基本コース
               <br />
@@ -24,7 +24,7 @@ export const Table = () => {
             <td className="whitespace-nowrap">
               5000円（30分）
               <br />
-              6000円（40分）
+              7000円（40分）
             </td>
           </tr>
           <tr className="hover:bg-gray-100 whitespace-normal">
@@ -33,19 +33,19 @@ export const Table = () => {
             <td className="p-2">7000円（30分）</td>
             <td className="w-1/6">
               5000円（30分） <br />
-              6000円（40分）
+              7000円（40分）
             </td>
           </tr>
           <tr className="hover:bg-gray-100 whitespace-normal">
             <td className="font-bold">上級 </td>
             <td className="p-2">9000円（30分）</td>
             <td className="p-2">8000円（30分）</td>
-            <td className="w-1/6">6000円（40分）</td>
+            <td className="w-1/6">7000円（40分）</td>
           </tr>
         </tbody>
       </table>
       <div className="text-left py-4 border-y-2 border-gray-100 hover:bg-gray-100">
-        <span className="font-bold">ワンレッスン</span> 50分 4000円
+        <span className="font-bold">ワンレッスン</span> 40分 4000円
       </div>
       <div className="text-left py-4 border-b-2 border-gray-100 hover:bg-gray-100">
         <span className="font-bold">その他のコース</span>
